@@ -1,0 +1,124 @@
+/* ------------------
+
+RESPONSIVE 
+
+----------------------*/
+
+
+@media only screen and (max-width:688px) {
+
+
+
+    /* header banner  */
+
+
+
+
+
+    .header {}
+
+    .header-banner {
+        grid-template-columns: repeat(auto-fit, minmax(988px, 2fr));
+        width: 70%;
+        margin: auto;
+
+    }
+
+
+    .header-title,
+    .section-title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .header-title,
+    .header-images img {
+        width: 350px;
+        height: 260px;
+        margin: auto;
+    }
+
+
+
+    .header-images {
+        /* grid-column: span 6; */
+        transition: transform ease 1.5s;
+    }
+
+
+    /*---------player grid card ----------*/
+    .grid-card {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+
+        margin: auto;
+    }
+
+
+
+
+    /*---------- --> macth-higlight-------*/
+
+    .today-match {
+        flex-direction: column;
+
+    }
+
+    .macth-title,
+    .macth-banner {
+        width: 100%;
+        padding: 2%;
+    }
+
+
+    .macth-banner img {
+        width: 328px;
+        height: 248px;
+    }
+
+    /*------------> best-team-------*/
+
+    .best-team {
+        grid-template-columns: 1fr;
+    }
+
+    /*-------->haider rafat -----*/
+
+    .haider {
+        grid-template-columns: 1fr;
+    }
+
+    /* footer  */
+
+    .footer-logo img {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .header-banner {
+        height: 900px;
+    }
+
+    .grid-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .today-match {
+        flex-direction: column;
+
+    }
+
+}

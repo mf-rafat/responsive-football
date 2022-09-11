@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/*------------------------------
+
+    1/COMMON STYLE SHEET 
+
+-------------------------------*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+    color: #000;
+}
+
+
+.header-title,
+.header-banner {
+    margin: 50px 10px;
+}
+
+
+.botton {
+    width: 150px;
+    height: 44px;
+    background: #E02C6D;
+    color: #ffff;
+    border-radius: 5px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffff;
+}
+
+
+
+
+
+/*------------------------------
+
+    2/HEADER PART 
+      -> NABIGATION
+      -> HEADER-BANNER
+
+-------------------------------*/
+
+/* ------------------
+
+->NAVIGATION 
+
+----------------------*/
+
+
+.navigation {
+    display: flex;
+    width: 1062px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.navber {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0 20px;
+
+}
+
+.navigation .botton {
+    margin-top: 10px;
+}
+
+
+.navigation .botton .signin {
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------
+
+-> HEADER BANNER  
+
+-------------------*/
+header {
+    width: 100%;
+    background: #2D25A0;
+    margin: 0;
+    padding: 0;
+}
+
+.header-banner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+   /* grid-template-columns: repeat(auto-fit, minmax(496px, 1fr));
+     margin:  auto; */
+   
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffff;
+}
+
+.header-images {
+    /* grid-column: span 6; */
+    transition: transform ease-out 1.5s;
+  }
+  .header-images:hover {
+    transform: skew(-20deg, 20deg) scale(1.01);
+  }
+.header-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-images img {
+    width: 556.01px;
+    height: 438px;
+   
+}
+
+
+/*------------------------------
+
+    3/ MAIN  PART 
+      -> PLAYER GRID CARD
+      ->MACH HIGLIGHT
+      -->BEST-TEAM
+      -->HAIDER--
+
+-------------------------------*/
+
+
+/*--------------------------------
+
+            --> PLAYER GRID CARD 
+
+------------------------------*/
+
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.card {
+    width: 270px;
+    height: 400;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-banner img {
+    width: 260px;
+    height: 256px;
+}
+
+/*--------------------------------
+
+            --> macth-higlight 
+
+------------------------------*/
+
+
+.today-match {
+    display:flex ;
+    margin: 5% 0;
+
+}
+
+.macth-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.macth-title,
+.macth-banner {
+    width: 50%;
+    padding: 2%;
+}
+
+
+.macth-banner img {
+    width: 500px;
+    height: 400px;
+}
+/*--------------------------------
+
+            --> best-team
+
+------------------------------*/
+.best-team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin-bottom: 50px;
+}
+
+.team{
+    padding: 5%;
+    background: #fff;
+    box-shadow: 0 0 30px gray;
+    border-radius: 20px;
+
+}
+
+.team-banner img{
+ width: 100%;
+}
+
+/*--------------------------------
+
+            -->haider rafat 
+
+------------------------------*/
+
+.haider{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+}
+
+.rafat-picture img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*--------------------------------
+
+            4/ FOOTER
+
+------------------------------*/
+
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-logo img {
+    width: 483px;
+    height: 110px;
+}
+
+
+.footer-icons .fo-icon {
+    color: black;
+    padding: 12px;
+    margin:0 14px ;
+    border-radius:50%;
+    background: #969BAB;
+}
+
+
+.fo-icon:hover {
+  background: #3cff00;
+  color: #000;
+}
+
+.footer-info p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
