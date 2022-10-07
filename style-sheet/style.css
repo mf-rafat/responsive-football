@@ -29,7 +29,7 @@ body {
 
 .header-title,
 .header-banner {
-    margin: 50px 10px;
+    margin: 0px 10px;
 }
 
 
@@ -68,31 +68,8 @@ a {
 ----------------------*/
 
 
-.navigation {
-    display: flex;
-    width: 1062px;
-    margin: auto;
-    justify-content: space-between;
-}
-
-.navber {
-    display: flex;
-}
-
-li {
-    list-style: none;
-    margin: 0 20px;
-
-}
-
-.navigation .botton {
-    margin-top: 10px;
-}
 
 
-.navigation .botton .signin {
-    margin: 10px;
-}
 
 
 
@@ -116,8 +93,10 @@ header {
 }
 
 .header-banner {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(2,1fr); */
 
    /* grid-template-columns: repeat(auto-fit, minmax(496px, 1fr));
      margin:  auto; */

@@ -15,12 +15,13 @@ RESPONSIVE
 
 
 
-    .header {}
 
     .header-banner {
-        grid-template-columns: repeat(auto-fit, minmax(988px, 2fr));
-        width: 70%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(auto-fit, minmax(988px, 2fr)); */
+        width: 100%;
+
 
     }
 
@@ -29,13 +30,20 @@ RESPONSIVE
     .section-title {
         font-weight: 500;
         font-size: 20px;
+        margin: 30Ppx;
     }
 
-    .header-title,
+
     .header-images img {
         width: 350px;
         height: 260px;
-        margin: auto;
+    }
+
+    .header-title,
+    .header-images {
+        width: 350px;
+        height: 260px;
+        margin: 60PX;
     }
 
 
@@ -108,7 +116,23 @@ RESPONSIVE
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .header-banner {
-        height: 900px;
+        height: 600px;
+        flex-direction: row;
+    }
+
+    .header-title,
+    .header-images {
+        font-size: 30px;
+        width: 350px;
+        height: 260px;
+        margin: ;
+    }
+
+    .header-images img {
+        width: 350px;
+        height: 260px;
+        display: flex;
+       margin: 50px auto;
     }
 
     .grid-card {
